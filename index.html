@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - HTML CSS DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="headerPage">
+        <div class="fotoPerfil">
+            <img src="img/perfil-jj.png" alt="Foto de perfil">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="https://www.linkedin.com/in/juliamjoya" title="Perfil LinkedIn">Ingeniero Julian Joya</a>
+                </li>
+                <!-- <li><a href="#">sobre mi</a></li> -->
+                <!-- <li><a href="#">proyectos</a></li> -->
+            </ul>
+        </nav>
+        <a href="https://juliamjoya.github.io/" class="btn"><button>GitHub Julian Joya</button></a>
+    </header>
+    <main>
+        <h1 class="tituloH1">Ejercicio HTML - CCS - DOM</h1>
+
+        <section class="descripcionEjercicios">
+            <p>La empresa perfumes latinos premiará a su empleado del mes (quien mas dinero recaude en ventas) con una
+                comisión y requiere un programa que almacene y muestre:</p>
+            <p>
+            <ul class="descripcionEjercicios">
+                <li>Qué cantidad de cada productos vendió cada vendedor.</li>
+                <li>La suma total de dinero recolectada por cada vendedor.</li>
+                <li>Nombre del empleado del mes, en caso de haber vendido lo mismo indicar que fue un empate.</li>
+            </ul>
+            </p>
+            <p>La empresa actualmente cuenta con los siguientes 4 productos que tienen los siguientes nombres y precios:
+            </p>
+            <p>
+            <ul class="descripcionEjercicios">
+                <li>Aqua: 200 usd.</li>
+                <li>Emoción: 180 usd.</li>
+                <li>Alegría: 160 usd.</li>
+                <li>Frescura: 150 usd.</li>
+            </ul>
+            </p>
+            <p>Y dos vendedores Juana y Pedro.</p>
+            <hr class="mt-4 mb-4">
+            <h2 class="tituloH1">WebApp Perfumes Latinos</h2>
+            <div class="infoEmpleados">
+                <div class="infoJuana">
+                    <img class="img-perfil-vendedor" alt="Foto Perfil Juana" src="img/profile_user_woman.png" />
+                    <p><b>Empleado:</b>Juana</p>
+                    <!-- <button id="botonRegVentaJuana" onclick="registrarVentasJuana()">Click registrar venta</button> -->
+                    <button id="botonRegVentaJuana">Click registrar venta</button>
+                    <ul id="productosRegistradosJuana"></ul>
+                </div>
+                <div class="infoPedro">
+                    <img class="img-perfil-vendedor" alt="Foto Perfil Pedro" src="img/profile_user_man.png" />
+                    <p><b>Empleado:</b>Pedro</p>
+                    <button id="botonRegVentaPedro">Click registrar venta</button>
+                    <div id="productosRegistradosPedro"></div>
+                </div>
+            </div>
+            <div class="contenedorEmpleadoMes">
+                <button id="botonCalculoEmpleadoMes">¿Quien es el empleado del
+                    mes?</button>
+            </div>
+            <div class="contenedorMensajeFinal">
+            </div>
+        </section>
+    </main>
+    <footer class="footerPage">
+        <span class="derechosCopy">&copy; 2023 Ing. Julian Joya</span>
+        <span class="emailFooter">Email: <a href="mailto:julian_joya@yahoo.es">julian_joya@yahoo.es</a></span>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
